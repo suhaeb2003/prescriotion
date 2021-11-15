@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Prescription</title>
+</head>
+   <style>   
+            *{
+               margin: 0;
+               padding: 0;
+            }
+             #prescription{
+                       background-color: #F8F9FA;
+             }
+             .container {
+             width: 70%;
+             margin: 0 auto;
+             padding: 2rem 0rem;
+             }
+            
+             .row_frist {
+                  display: grid;
+                  grid-template-columns:auto auto;
+                  grid-column-gap: 5rem;
+                  margin-bottom: 1rem;
+               }
+             .row_frist h2 {
+                margin-bottom: .8rem;
+             }
+ 
+             .row_frist p {
+                font-weight: 600;
+                font-size: .9rem;
+                line-height: 1.3rem;
+             }
+             .logo img {
+               width: 100%;
+            }
+            .logo_box {
+               width: 50%;
+               margin-left: 56%;
+            }
+            .tabel_system {
+               display: grid;
+               grid-template-columns: auto auto;
+               margin: 1rem 0rem .4rem 0rem;
+               grid-column-gap: 1rem;
+            }
+
+            .age,.logo {
+               text-align: right;
+            }
+            .row_second {
+               display: grid;
+               grid-template-columns: auto auto auto auto;
+               margin-bottom: 1rem;
+               grid-column-gap: 1rem;
+            }
+
+            .bp {
+               text-align: right;
+            }
+            /* =====third row====== */
+            .row_third {
+               display: grid;
+               grid-template-columns: auto auto auto auto;
+               text-align: justify;
+               margin-bottom: 1rem;
+               grid-column-gap: 1rem;
+            }
+            .note {
+               padding: 2rem;
+            }
+
+            .detials {
+               grid-column: 2/4;
+            }
+            /* .prescription start here */
+            .prescription {
+               display: grid;
+               grid-template-columns: 30% 70%;
+               grid-column-gap: 1rem;
+               margin-top: 1rem;
+               
+            }
+            .p_left h4,.p_right h4 {
+               background: #87CEEA;
+               text-align: center;
+               padding: .3rem;
+            }
+
+            .p_left ul {
+               margin: 1rem 1.5rem;
+            }
+            .m_list {
+               display: grid;
+               grid-template-columns: auto auto auto auto auto;
+               grid-column-gap: 0.5rem;
+               margin-top: 0.5rem;
+               text-align: center;
+            }
+            .m_list p {
+               margin-top: 0.3rem;
+            }
+            .m_list h5 {
+               font-size: 1rem;
+            }
+            .date_sign {
+               display: grid;
+               grid-template-columns: 80% 20%;
+               grid-column-gap: 1rem;
+               margin-top: 2rem;
+            }
+
+            .sign {
+               text-align: center;
+            }
+            .footer {
+               margin-top: 1rem;
+            }
+            p.p_btn {
+               background: #87CEEA;
+               text-align: center;
+               padding: 0.5rem;
+               margin-top: 1rem;
+            }
+            @media screen and (max-width: 768px){
+               .logo_box {
+                  width: 95%;
+                  margin-left: 6%;
+               }
+
+            }
+            @media screen and (min-width:300px) and (max-width:767px){
+               .row_frist {
+                  grid-template-columns:auto;
+                  
+               }
+               .about {
+                  margin: auto;
+               }
+               .logo_box {
+                  width: 100%;
+                  margin-left: 0%;
+               }
+               .tabel_system {
+                  font-size: 92%;
+               }
+               .row_second {
+                  grid-template-columns: auto auto;
+               }
+               .bp {
+                  text-align: left;
+               }
+               .prescription {
+                  grid-template-columns: auto;
+               }
+                                                                        
+           }
+
+
+   </style>
+<body>
+          <section id="prescription">
+                    <div class="container">
+                              <div class="row_frist">
+                                        <div class="about">
+                                           <h2>Ishmael Bryan</h2>
+                                           <p>BDS,MDS-Oral & <br>Maxillofacial Surger <br>Times:Monday 4:00pm-8:00pm</p>
+                                        </div>
+                                        <div class="logo">
+                                           <div class="logo_box">
+                                              <img src="./image/logo.png" alt="">
+                                           </div>
+                                           
+                                        </div>
+                              </div><hr>
+
+                              <!------- table div here --------->
+                              <div class="row">
+                                 <div class="tabel_system">
+                                 <div>
+                                    <p><b>Patient Name:</b>Suhag Mia</p>
+                                 </div>
+                                 <div class="age">
+                                    <p><b>Age:</b>18 years</p>
+                                 </div>
+                              </div>
+                              <div class="row_second">
+                                 <div><p><b>Gender:</b>Male</p></div>
+                                 <div><p><b>Height:</b>160 CM</p></div>
+                                 <div><b>Wheight:</b>50 kg</div>
+                                 <div class="bp"><b>BP:</b>140/80</div>
+                              </div>
+                              <div class="row_third">
+                                 <div class="note"><b>Note:</b></div>
+                                 <div class="detials"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae blanditiis soluta facilis voluptatem facere, fugiat repudiandae laborum deserunt commodi quaerat beatae recusandae tempore ullam animi. Esse explicabo nesciunt libero nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita voluptates, consectetur libero fuga dolorem perferendis harum tempora. Nostrum, error.</p></div>
+                              </div>
+                              </div><hr>
+                              <!-- prescription div here -->
+                              <div class="prescription">
+                                 <div class="p_left">
+                                    <h4>Medical Test</h4>
+                                    <ul>
+                                       <li>1.5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae!</li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                       <li>24 hour ipsum dolor sit amet</li>
+                                    </ul><hr>
+                                 </div>
+                                 <div class="p_right">
+                                    <h4>Medication</h4>
+                                        <div class="m_list">
+                                           <div>
+                                              <h5>Brand Name</h5>
+                                              <p>Napa</p>
+                                              <p>Seclo</p>
+                                          </div>
+                                           <div>
+                                              <h5>Strength</h5>
+                                             <p>500mg</p>
+                                             <p>20mg</p>
+                                          </div>
+                                           <div>
+                                              <h5>Time</h5>
+                                             <p>1+1+1</p>
+                                             <p>1+0+1</p>
+                                          </div>
+                                           <div>
+                                             <h5>Meal</h5>
+                                             <p>After Meal</p>
+                                             <p>Before Meal</p>
+                                           </div>
+                                           <div>
+                                             <h5>Days</h5>
+                                             <p>10</p>
+                                             <p>20</p>
+                                           </div>
+                                        </div>
+                                 </div>
+                              </div>
+                              <div class="date_sign">
+                                 <div>
+                                    <p>Date:20-sep-2021</p>
+                                 </div>
+                                 <div class="sign">
+                                    <hr>
+                                    <p>Doctor Signature</p>
+                                 </div>
+                              </div>
+                            <div class="footer">
+                               <p>Thank You! & May God heal you</p>
+                               <p class="p_btn">Dot not take any medicine without the advice of a doctor !!!</p>
+                               <small>Print Date:21-September-2021,10:32pm</small>
+                            </div>
+
+                              
+
+
+                    </div>
+
+          </section>
+</body>
+</html>
